@@ -7,6 +7,8 @@
     <title>Weather Forecast</title>
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -17,7 +19,7 @@
             <div class="form-container">
                 <input type="email" id="login-email" placeholder="Email">
                 <input type="password" id="login-password" placeholder="Password">
-                <button id="login-submit">LOGIN</button>
+                <button id="login-submit" onclick="login()">LOGIN</button>
                 <a href="Register.html" class="redirect">Don't have an account?</a>
             </div>
         </div>
