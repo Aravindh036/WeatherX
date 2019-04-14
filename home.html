@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,26 +9,30 @@
     <script src="home.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="home-container">
         <nav class="home-nav">
             <div class="heading">WeatherX</div>
             <div class="nav-options">
+                <div class="gallery">
+                    <li onclick="openHome()">Gallery</li>
+                </div>
                 <div class="about">
                     <li onclick="activate()">About</li>
                     <div id="about-id" class="about-list">
-
+                        <span>Hello</span>
                     </div>
                 </div>
                 <div class="gallery">
-                    <li>Gallery</li>
+                    <li onclick="openGallery()">Gallery</li>
                 </div>
                 <div class="contact">
-                    <li>Contact</li>
+                    <li onclick="openContact()">Contact</li>
                 </div>
             </div>
         </nav>
-        <div class="weather-container">
+        <div class="weather-container" id="container-id">
             <div class="user-location">
                 <div class="heading">Location</div>
                 <input type="text" class="location-id" placeholder="Enter location">
@@ -35,4 +40,5 @@
         </div>
     </div>
 </body>
+
 </html>
